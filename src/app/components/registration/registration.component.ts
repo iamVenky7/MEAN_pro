@@ -1,3 +1,4 @@
+import { AuthService } from './../../services/auth.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -10,7 +11,12 @@ export class RegistrationComponent {
     username: '',
     password: '',
   };
+  constructor(private _auth: AuthService) {}
   registerUser() {
-    console.log(this.registeruserData);
+    // console.log(this.registeruserData);
+    this._auth.registerUser(this.registeruserData).subscribe(
+      (res) => console.log(res),
+      (err) => console.log(err)
+    );
   }
 }
