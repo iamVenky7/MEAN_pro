@@ -1,3 +1,4 @@
+import { HomePageService } from './services/home-page.service';
 import { AuthService } from './services/auth.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -29,7 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, HomePageService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

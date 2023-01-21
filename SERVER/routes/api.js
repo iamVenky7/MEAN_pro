@@ -51,4 +51,34 @@ router.post("/login", (req, res) => {
   });
 });
 
+router.get("/home", (req, res) => {
+  let homePage = [
+    {
+      _id: "1",
+      name: "mobiles",
+    },
+    {
+      _id: "2",
+      name: "Electronics",
+    },
+    {
+      _id: "3",
+      name: "TV's",
+    },
+    {
+      _id: "4",
+      name: "Fashion",
+    },
+    {
+      _id: "5",
+      name: "Furniture",
+    },
+    {
+      _id: "6",
+      name: "Beauty",
+    },
+  ];
+  res.json(homePage);
+});
+
 module.exports = router;
