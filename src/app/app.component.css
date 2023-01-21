@@ -1,0 +1,32 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.sidenav-container {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  height: 90vh;
+}
+
+mat-nav-list {
+  width: 250px;
+}
+a:hover {
+  background: #fff;
+  text-decoration: none;
+  color: #00f;
+}
+::ng-deep .customize {
+  background: #fff;
+  color: black;
+}
+::ng-deep .customize a {
+  color: black;
+}
+::ng-deep .customize a:hover {
+  color: red;
+}
